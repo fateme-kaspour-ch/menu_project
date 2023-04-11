@@ -2,7 +2,7 @@ selection = 0
 error = False
 
 
-class Final:
+class Menu:
     def menu(self):
         print("""--------------------\U0001F40D
 1. diagram
@@ -170,25 +170,25 @@ class Final:
             print('There is no file with this name')
 
 
-f = Final()
+m = Menu()
 
 # -----------------------Running menu
 while True:
     if not error:
         selection = f.menu()
     if selection == "1":
-        f.diagram()
+        m.diagram()
     elif selection == "2":
-        f.calsalary()
+        m.calsalary()
     elif selection == "3":
-        f.prime()
+        m.prime()
     elif selection == "4":
-        f.palindrome()
+        m.palindrome()
     elif selection == "5":
-        f.uppercase_word()
-        f.menu()
+        m.uppercase_word()
+        m.menu()
     elif selection == "6":
-        f.copy_file()
+        m.copy_file()
     elif selection == "end":
         exit()
     else:
