@@ -175,7 +175,7 @@ m = Menu()
 # -----------------------Running menu
 while True:
     if not error:
-        selection = f.menu()
+        selection = m.menu()
     if selection == "1":
         m.diagram()
     elif selection == "2":
